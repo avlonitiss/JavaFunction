@@ -5,6 +5,8 @@
 
 package iek.agdim.javafunction;
 
+import java.util.Scanner;
+
 /**
  *
  * @author User
@@ -12,7 +14,12 @@ package iek.agdim.javafunction;
 public class JavaFunction {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+      String name;
+      int age;
+      char gender;
+      double salary;
+      int kids;
+      
         
         Scanner console=new Scanner(System.in);
         System.out.println("Enter name:");
@@ -26,10 +33,27 @@ public class JavaFunction {
 		
 		// εαν ο υπάλληλος έχει δύο παιδιά, ο μισθός θα είναι 20% μεγαλύτερος
 		// παράδειγμα: printStat(όνομα, ηλικία ....);
-static void printStat() {
+
+                System.out.println("Enter No of Kids:");
+		kids=console.nextInt();
+		if (kids>2){
+		salary=salary*1.2;}
+                
+               
+		printStat(name,age,gender,salary,kids);
+                
+		
+
+}
+    
+    static void printStat (String empName, 
+                        int empAge, char empGender, 
+			double empSalary, int empKids) {
    
         
-        System.out.println("Name:"+name+"Age"+age+"Gender"+gender+"Salary:"+salary);
+        System.out.println("\nName: "+empName+"\nAge: "+empAge+
+							"\nGender: "+empGender+"\nSalary: "+empSalary+
+							"Kids: "+empKids);
     }
-    }
+                        
 }
