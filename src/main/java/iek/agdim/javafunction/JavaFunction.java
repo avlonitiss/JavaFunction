@@ -48,6 +48,27 @@ public class JavaFunction {
                 // if there are kids, print with new function
                 // their data
                 
+                if (kids>0){
+                
+                    for(int i = 0; i<kids;i++){
+                    System.out.println("Enter name:");
+                    kidsNames[i]=console.nextLine();
+                    System.out.println("Enter age:");
+                    kidsAges[i]=console.nextInt();
+                }
+                
+		printKids(kids,kidsNames,kidsAges);
+		
+
+}
+    }
+    
+    
+ 
+    static void printKids(int kidsNumber, String KidNames[],int KidAge[]){
+        for(int i = 0; i<kidsNumber;i++){
+                    System.out.println(KidNames[i]+", "+KidAge[i]);
+                }
     }
     
     static void printStat (String empName, 
