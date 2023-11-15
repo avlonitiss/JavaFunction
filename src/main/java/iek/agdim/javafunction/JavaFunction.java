@@ -44,6 +44,10 @@ public class JavaFunction {
                 String[] kidsNames = new String[kids] ;
                 int[] kidsAges = new int[kids];
  
+                // new function for printing kids data
+                // if there are kids, print with new function
+                // their data
+                
     }
     
     static void printStat (String empName, 
