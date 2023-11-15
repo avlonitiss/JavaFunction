@@ -39,12 +39,12 @@ public class JavaFunction {
 		if (kids>2){
 		salary=salary*1.2;}
                 
-               
-		printStat(name,age,gender,salary,kids);
+                printStat(name,age,gender,salary,kids);
                 
-		
-
-}
+                String[] kidsNames = new String[kids] ;
+                int[] kidsAges = new int[kids];
+ 
+    }
     
     static void printStat (String empName, 
                         int empAge, char empGender, 
@@ -55,5 +55,6 @@ public class JavaFunction {
 							"\nGender: "+empGender+"\nSalary: "+empSalary+
 							"Kids: "+empKids);
     }
-                        
+    
+    
 }
